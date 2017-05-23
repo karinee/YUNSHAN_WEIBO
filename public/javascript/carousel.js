@@ -77,7 +77,7 @@ for (var i = 0; i < spans.length; i++) {
     };
     //跳轉不同html
     images[i].onclick = function() {
-        window.open('event_detail' + document.getElementById(image_index.toString()).attributes["index"].value + '.html');
+        window.open('../html/event_detail' + document.getElementById(image_index.toString()).attributes["index"].value + '.html');。/
     };
 }
 

@@ -1,0 +1,106 @@
+#comment{
+    height: 620px;
+}
+#topic{
+    position: relative;
+    background-color: #90F0D8;
+    width:100%;
+    height: 570px;
+    overflow: hidden;
+}
+#svg2 {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+}
+#svg2 .node {
+    cursor: pointer;
+}
+
+#svg2 .node:hover  {
+    stroke: #000;
+    stroke-width: 1.5px;
+}
+
+#svg2 .node--leaf {
+    fill: white;
+}
+
+#svg2 .label {
+    font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+#svg2 .label,
+#svg2 .node--root,
+#svg2 .node--leaf {
+    pointer-events: none;
+}
+#artical{
+    position:absolute;
+    right:0;
+    width:40%;
+    height:100%;
+    /*display: none;*/
+    overflow: hidden;
+}
+#sortable{
+    position: absolute;
+    display: block;
+    width:104%;
+    list-style: none;
+    top:0;
+    bottom:0;
+    overflow-y:auto;
+    overflow-x: hidden;
+}
+
+.right_text{
+    background: #34495E;
+    height: 80px;
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #2C3E50;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.7s ease;
+    position: relative;
+    padding: 8px 5px;
+    border-top: 5px solid #9EFCB4;
+    border-bottom: 3px solid #9EFCB4;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-right: 17px solid #1FAB89;
+    border-left: 17px solid #1FAB89;
+
+}
+.right_text:hover{
+    background: #273952;
+    border-right: 17px solid #9EFCB4;
+    border-left: 17px solid #9EFCB4;
+    border-top: 5px solid #1FAB89;
+    border-bottom: 3px solid #1FAB89;
+    /*color:#6EF3D6;*/
+}
+
+.right_text p{
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 100;
+    max-width: 99%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+}
+.right_text p:hover{
+    color:#6EF3D6;
+}
